@@ -23,7 +23,7 @@ class ThingBloc extends Bloc<ThingEvent, ThingState> {
 
   Future<void> _handelAddThing(event, emit) async {
     emit(LoadingState());
-    await Future.delayed(const Duration(seconds: 1));
+    // await Future.delayed(const Duration(seconds: 1));
 
     final result = await addThingUsecase(event.thingModel);
 
@@ -41,7 +41,7 @@ class ThingBloc extends Bloc<ThingEvent, ThingState> {
 
   Future<void> _handleGetThings(event, emit) async {
     emit(LoadingState());
-    await Future.delayed(const Duration(seconds: 1));
+    // await Future.delayed(const Duration(seconds: 1));
 
     final result = getThingsUsecase();
 

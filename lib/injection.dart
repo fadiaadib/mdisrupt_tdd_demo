@@ -6,12 +6,12 @@ import 'package:mdisrupt_tdd_demo/features/things/data/repos/things_repo_impl.da
 import 'package:mdisrupt_tdd_demo/features/things/domain/repos/things_repo.dart';
 import 'package:mdisrupt_tdd_demo/features/things/domain/usecases/add_thing.dart';
 import 'package:mdisrupt_tdd_demo/features/things/domain/usecases/get_things.dart';
-import 'package:mdisrupt_tdd_demo/features/things/presentation/blocs/bloc/thing_bloc.dart';
+import 'package:mdisrupt_tdd_demo/features/things/presentation/blocs/thing_bloc.dart';
 
 /// Short for Service Locator
 final sl = GetIt.instance;
 
-Future<void> initInjection() async {
+void initInjection({required SharedPreferences sharedPreferences}) {
   // Register the Bloc
   sl.registerFactory(
     () => ThingBloc(
@@ -35,6 +35,5 @@ Future<void> initInjection() async {
   );
 
   // Register the External packages
-  final sharedPreferences = await SharedPreferences.getInstance();
   sl.registerSingleton<SharedPreferences>(sharedPreferences);
 }

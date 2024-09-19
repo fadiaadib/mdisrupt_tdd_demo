@@ -7,7 +7,7 @@ import 'package:mdisrupt_tdd_demo/core/errors/failures.dart';
 import 'package:mdisrupt_tdd_demo/features/things/domain/usecases/add_thing.dart';
 import 'package:mdisrupt_tdd_demo/features/things/domain/usecases/get_things.dart';
 import 'package:mdisrupt_tdd_demo/features/things/data/models/thing_model.dart';
-import 'package:mdisrupt_tdd_demo/features/things/presentation/blocs/bloc/thing_bloc.dart';
+import 'package:mdisrupt_tdd_demo/features/things/presentation/blocs/thing_bloc.dart';
 
 class MockAddThing extends Mock implements AddThing {}
 

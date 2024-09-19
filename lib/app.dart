@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:mdisrupt_tdd_demo/core/theme/theme.dart';
-import 'package:mdisrupt_tdd_demo/features/things/presentation/blocs/bloc/thing_bloc.dart';
+import 'package:mdisrupt_tdd_demo/features/things/presentation/blocs/thing_bloc.dart';
 import 'package:mdisrupt_tdd_demo/features/things/presentation/pages/home_screen.dart';
 import 'package:mdisrupt_tdd_demo/injection.dart';
 
