@@ -54,6 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
           IconButton(
             onPressed: () => _openAddThingForm(context),
             icon: const Icon(Icons.add),
+            tooltip: 'Add New Thing',
           ),
         ],
       ),
